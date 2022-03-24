@@ -15,3 +15,4 @@ Editamos readme con prototipo e introducción en una rama nueva.
 Creamos branch para CSS y HTML.
 Fijamos el fondo y estilo de box en CSS.
 Agregamos en HTML título, input text para nombre, input range para nivel de codificación.
+Completamos la primera pantalla y tuvimos office hour con Mauricio donde pedimos feedback del prototipo y resolvimos bloqueo sobre agregar pantallas.
