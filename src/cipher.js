@@ -1,3 +1,5 @@
+const letters = [a,b,c,d,f,g,h,i,j,k,l,m,'ñ',o,p,q,r,s,t,u,v,w,x,y,z]
+const ñ = ['\u00F1']
 const cipher = {
   // ...
   const newLetters = {};
