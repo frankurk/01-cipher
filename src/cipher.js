@@ -1,11 +1,18 @@
 const cipher = {
   // ...
-//   const alphabet = ["A","B","C","D","E","F","G","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-//   const nickname = document.getElementById('nickname');
-//   const range = document.getElementById('range');
+  const newLetters = {};
+  const adjustedKey = {key % 26};
 
-//   const element = document.getElementById("start");
-// element.addEventListener("click", function()
+  for (const letter of string) {
+     let newLetter = (letter.charCodeAt() + adjustedKey)
+     if (newLetter <= 122) {
+        newLetters.push(String.fromCharCode(newLetter));
+     } else if (newLetter > 122) {
+        newLetters.push(String.fromCharCode(96 + (newLetter % 122)));
+     }
+  }
+  return (newLetters.join(''))
+}
 encode(){}
 };
 
