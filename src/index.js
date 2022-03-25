@@ -9,5 +9,5 @@ element.addEventListener("click", function()
 const decode = document.getElementById("decode");
 element.addEventListener("click",
     function newDoc() 
-    {window.location.assign("http://www.src.cl/decode.html")
+    {window.location.assign("http://127.0.0.1:5500/SCL020-cipher/src/decode.html")
 console.log(cipher);
