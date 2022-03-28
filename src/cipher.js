@@ -1,19 +1,32 @@
-const letters = [a,b,c,d,f,g,h,i,j,k,l,m,'ñ',o,p,q,r,s,t,u,v,w,x,y,z]
-const ñ = ['\u00F1']
-const newLetters = {};
-const adjustedKey = {key % 26};
-const letterOfString = 'letters'
-const cipher = {
-  // ...
-   for (const letterOfString) {
-     let newLetter = (letter.charCodeAt() + adjustedKey)
-     if (newLetter <= 122) {
-        newLetters.push(String.fromCharCode(newLetter));
-     } else if (newLetter > 122) {
-        newLetters.push(String.fromCharCode(96 + (newLetter % 122)));
-     return (newLetters.join(''))
+const cipherEncode = function (offset, text) {
+   let result = "";
+   for (let i = 0; i < text.length; i++) {
+     let letterPosition = text[i].charCodeAt();
+ 
+     if (letterPosition >= 65 && letterPosition <= 90) {
+       letterPosition += offset % 26;
+ 
+       if (letterPosition > 90) letterPosition -= 26;
+       if (letterPosition < 65) letterPosition += 26;
      }
-    }
-encode(){}
-};
-export default cipher;
+ 
+     result += String.fromCharCode(letterPosition);
+   }
+ 
+   return result;
+ };
+ 
+ 
+ const cipher = {
+   encode: function (userOffset, userText) {
+     const encodedResult = cipherEncode(userOffset, userText);
+     return encodedResult;
+   },
+   decode: function (userOffset, userText) {
+     const decodedResult = cipherEncode(-userOffset, userText);
+     return decodedResult;
+   },
+ };
+ 
+ export default cipher;
+ 
