@@ -5,6 +5,7 @@ TEMA: Comunicación en contexto de conflicto militar o político.
 CLIENTE: Personas que necesitan comunicarse sin ser censuradas.
 FUENTE:Inknut Antiqua-Monofett-Jockey One
 PALETA DE COLORES: #062C30-#05595B-#E2D784-#F5F5F5
+<img SRC = "COLOR PALETTE.png">
 
 PROTOTIPO
 <img src = "PROTOTYPE.png">

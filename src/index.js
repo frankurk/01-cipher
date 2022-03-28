@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-const range = document.getElementById('range');
+const userOffset = document.getElementById('userOffset');
 
 const encode = document.getElementById("encode");
 element.addEventListener("click", function()
