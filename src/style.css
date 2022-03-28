@@ -1,0 +1,45 @@
+body {
+    background-color: #062C30;
+  }
+
+h1 {
+    font-family: 'Monofett';
+    font-size: 98px;
+    color: #E2D784;
+    margin: 0;
+}
+
+div {
+    background-color: #05595B;
+    width: 800px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-content: center;
+  }
+
+  .subt {
+    font-family: 'Jockey One';  
+    font-size: 30px;
+    color: #F5F5F5;
+  }
+
+  .button {
+    background-color: #E2D784;
+    color: #062C30;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Monofett';
+    border-radius: 25px;
+  }
+
+  img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: auto;
+  }
