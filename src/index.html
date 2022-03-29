@@ -12,14 +12,12 @@
     <img src="proteger.png" class="img"/>
     <div id="root">
       <h1>CODEME</h1>
-        <label class= "subt" for="nickname">NICKNAME:</label><br><br>
-        <input type="text" placeholder="Ingresa un nickname" id="nickname" name="nickname"><br><br>
         <label class= "subt" for="level" >NIVEL DE CODIFICACIÓN</label><br><br>
         <input id= "userOffset" type="range" value= "5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
-        <output class="subt">5</output>
+        <output class="subt">5</output><br><br>
       </form>
       <button onclick= "window.location.href='decode.html';" class="button" id="decode">DECODE</button>
-      <button onclick= "window.location.href='encode.html';"class="button" id="encode">ENCODE</button>
+      <button class="button" id="encodeOption">ENCODE</button>
     </div>
     <script src="index.js" type="module"></script>
   </body>
