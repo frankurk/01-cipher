@@ -22,7 +22,27 @@ if(encodeButton){
 
 };
 
+const decodeOption = document.getElementById('decodeOption');
 
+const decodeButton = document.getElementById('decodeMsg');
+
+if(decodeOption) {
+    decodeOption.addEventListener("click",function() {
+    let userOffset = document.getElementById('userOffset').value;
+    window.localStorage.setItem('offset', userOffset);
+    window.location.href= 'decode.html';
+    }); 
+};
+
+if(decodeButton){
+    decodeButton.addEventListener("click",function(){
+        let userOffset = window.localStorage.getItem('offset');
+        let msgDecode = document.getElementById('msgDecode').value;
+        const decodeMessage = cipher.decode(userOffset,msgDecode);
+        document.getElementById("output").value = decodeMessage;
+    });
+
+};
 
 
 

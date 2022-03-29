@@ -19,3 +19,8 @@ Fijamos el fondo y estilo de box en CSS.
 Agregamos en HTML título, input text para nombre, input range para nivel de codificación.
 Completamos la primera pantalla y tuvimos office hour con Mauricio donde pedimos feedback del prototipo y resolvimos bloqueo sobre agregar pantallas.
 Agregamos pantalla encode y decode y logramos hacer que cada botón de la pantalla principal lleve a su correspondiente html.
+Hicimos merge con cambios de HTML, CSS Y README.
+Pedimos OH con Mauricio donde nos ayudó a conectar la info del slide para el desplazamiento del cifrado y también poder unir el cifrado con el botón.
+Logramos que el botón en cada pantalla se conecte con el cifrado encode y decode.
+Actualizamos README y mergeamos una branch con el cifrado en ambas pantallas.
+Trabajamos en agregar un fonde diferente en las pantallas de encode y decode.
