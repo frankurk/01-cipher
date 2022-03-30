@@ -49,3 +49,11 @@ if(goBackButton) {
     history.back();
     });
 }
+
+const slider = document.getElementById("userOffset");
+var outputOffset = document.getElementById("outputOffset");
+outputOffset.innerHTML = slider.value;
+
+slider.oninput = function() {
+  outputOffset.innerHTML = this.value;
+}
