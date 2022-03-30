@@ -44,16 +44,18 @@ if (decodeButton) {
   });
 }
 
-if(goBackButton) {
-    goBackButton.addEventListener("click", function() {
+if (goBackButton) {
+  goBackButton.addEventListener("click", function () {
     history.back();
-    });
+  });
 }
 
 const slider = document.getElementById("userOffset");
-var outputOffset = document.getElementById("outputOffset");
-outputOffset.innerHTML = slider.value;
 
-slider.oninput = function() {
-  outputOffset.innerHTML = this.value;
+if (slider) {
+  slider.oninput = function () {
+    const range = slider.value;
+    const offsetInput = document.getElementById("outputOffset");
+    offsetInput.innerHTML = range;
+  };
 }
