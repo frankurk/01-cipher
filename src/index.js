@@ -53,16 +53,9 @@ if (goBackButton) {
 const slider = document.getElementById("userOffset");
 
 if (slider) {
-  slider.oninput = function() {
-      const range = slider.value;
-      const offsetInput = document.getElementById('outputOffset');
-      offsetInput.innerHTML = range;
-  }
+  slider.oninput = function () {
+    const range = slider.value;
+    const offsetInput = document.getElementById("outputOffset");
+    offsetInput.innerHTML = range;
+  };
 }
-
-// const outputOffset = document.getElementById("outputOffset");
-//   outputOffset.innerHTML = slider.value;
-
-//   slider.oninput = function () {
-//     outputOffset.innerHTML = this.value;
-//   };
