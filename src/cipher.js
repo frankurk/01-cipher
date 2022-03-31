@@ -2,6 +2,13 @@ const cipherEncode = function (offset, text,) {
   let result = '';
   for (let i = 0; i < text.length; i++) {
     let letterPosition = text[i].charCodeAt();
+    
+    if (letterPosition >= 48 && letterPosition <= 57) {
+      letterPosition += offset % 10;
+
+      if (letterPosition > 57) letterPosition -= 10;
+      if (letterPosition < 48) letterPosition += 10;
+    }
 
     if (letterPosition >= 65 && letterPosition <= 90) {
       letterPosition += offset % 26;
@@ -15,10 +22,11 @@ const cipherEncode = function (offset, text,) {
 
       if (letterPosition > 122) letterPosition -= 26;
       if (letterPosition < 97) letterPosition += 26;
-    }HOLA
+    }
 
     result += String.fromCharCode(letterPosition);
   }
+
 
   return result;
 };
