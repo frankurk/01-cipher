@@ -15,7 +15,7 @@ const cipherEncode = function (offset, text,) {
 
       if (letterPosition > 122) letterPosition -= 26;
       if (letterPosition < 97) letterPosition += 26;
-    }
+    }HOLA
 
     result += String.fromCharCode(letterPosition);
   }
