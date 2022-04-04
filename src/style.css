@@ -98,7 +98,7 @@ div {
     font-family: 'Monofett';
     border-radius: 25px;
     position: fixed;
-    top: 60%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    margin: 20px;
+    align-content: center;
   }
