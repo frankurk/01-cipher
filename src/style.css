@@ -94,5 +94,8 @@ div {
     font-family: 'Monofett';
     border-radius: 25px;
     margin: 30;
-    margin-left: auto
+    margin-left: auto;
+   margin-right: auto;
+    display:block;
+
   }
