@@ -26,8 +26,8 @@ div {
   }
 
   .subt {
-    font-family: 'PT Sans', sans-serif;
-    font-style: 'Regular 400';
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 700;
     font-size: 30px;
     color: #F5F5F5;
     margin: 30;
