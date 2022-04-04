@@ -6,17 +6,20 @@ h1 {
     font-family: 'Monofett';
     font-size: 98px;
     color: #E2D784;
-    margin: 20;
+    margin: 30px;
     text-align: center;
     align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
 }
 
 div {
     background-color: #05595B;
     width: 800px;
-    height: 400px;
+    height: 450px;
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -78,7 +81,7 @@ div {
   width: 800px;
   height: 200px;
   position: fixed;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
