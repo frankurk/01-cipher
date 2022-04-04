@@ -10,6 +10,14 @@ const decodeButton = document.getElementById("decodeButton");
 
 const goBackButton = document.getElementById("goback");
 
+const startButton = document.getElementById('startOption');
+
+if (startButton) {
+  startButton.addEventListener("click", function () {
+  window.location.href = "landing.html";
+  });
+}
+
 if (encodeOption) {
   encodeOption.addEventListener("click", function () {
     let userOffset = document.getElementById("userOffset").value;
