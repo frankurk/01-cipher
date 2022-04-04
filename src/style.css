@@ -6,19 +6,15 @@ h1 {
     font-family: 'Monofett';
     font-size: 98px;
     color: #E2D784;
-    margin: 30;
-    display: block;
-    width: auto;
-    text-align: center;
-
+    margin: 0;
 }
 
 div {
     background-color: #05595B;
     width: 800px;
-    height: 500px;
+    height: 400px;
     position: fixed;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -29,7 +25,6 @@ div {
     font-family: 'Jockey One';  
     font-size: 30px;
     color: #F5F5F5;
-    margin: 30;
   }
 
   .button {
@@ -50,7 +45,6 @@ div {
     font-size: 25px;
     font-family: 'Monofett';
     border-radius: 25px;
-    margin: 30;
   }
 
   img{
