@@ -6,11 +6,12 @@ h1 {
     font-family: 'Monofett';
     font-size: 98px;
     color: #E2D784;
-    margin: 15;
+    margin: 30px;
     text-align: center;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
+    height: 110px;
 }
 
 div {
