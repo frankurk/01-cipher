@@ -12,6 +12,8 @@ const goBackButton = document.getElementById("goback");
 
 const startButton = document.getElementById('startOption');
 
+const copyButton = document.getElementById('copyButton');
+
 if (startButton) {
   startButton.addEventListener("click", function () {
   window.location.href = "landing.html";
@@ -66,4 +68,12 @@ if (slider) {
     const offsetInput = document.getElementById("outputOffset");
     offsetInput.innerHTML = range;
   };
+}
+
+if (copyButton) {
+  copyButton.addEventListener("click", function () {
+  let copyText = document.getElementById("output");
+  copyText.select();
+  navigator.clipboard.writeText(copyText.value);
+  });
 }

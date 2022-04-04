@@ -98,3 +98,18 @@ div {
     margin: 20px;
     align-content: center;
   }
+
+  .copy {
+    background-color: #E2D784;
+    color: #062C30;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'PT sans',sans-serif;
+    font-weight: 400;
+    border-radius: 25px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+    align-content: right;
+  }
