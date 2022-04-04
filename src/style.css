@@ -6,7 +6,9 @@ h1 {
     font-family: 'Monofett';
     font-size: 98px;
     color: #E2D784;
-    margin: 0;
+    margin: 20;
+    text-align: center;
+    align-content: center;
 }
 
 div {
