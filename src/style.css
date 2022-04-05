@@ -1,5 +1,5 @@
 body {
-    background-color: #062C30;
+    background-color: #062c30
   }
 
 h1 {
@@ -80,7 +80,6 @@ div {
   margin: 30;
   width: 800px;
   height: 200px;
-  position: fixed;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -101,9 +100,9 @@ div {
     margin-right: auto;
     display: block;
     margin-top: 150px; 
-    margin-bottom:200px;
+    margin-bottom:100px;
   }
-
+  
   .copy {
     background-color: #E2D784;
     color: #062C30;
@@ -114,9 +113,23 @@ div {
     font-weight: 400;
     border-radius: 25px;
     position: fixed;
-    transform: translate(-50%, -50%);
+    transform: translate(-10%, -20%);
     margin: 20px;
     align-content: right;
   }
 
-
+p{
+  font-family: 'PT sans',sans-serif;
+  font-weight: 400;
+  font-size:15px ;
+  color: #010101 ;
+  margin: 30;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  height: 40px;
+}
