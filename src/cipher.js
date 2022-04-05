@@ -1,10 +1,5 @@
 
 const cipherEncode = function (offset, text,) {
-  try {
-    if (text == "") throw new TypeError();
-  } catch (e) {
-    console.log(e.name); 
-  }
   let result = "";
   for (let i = 0; i < text.length; i++) {
     let letterPosition = text[i].charCodeAt();
@@ -38,6 +33,11 @@ const cipherEncode = function (offset, text,) {
 
 const cipher = {
   encode: function (userOffset, msgEncode) {
+    try {
+      if (text == "") throw new TypeError();
+    } catch (e) {
+      console.log(e.name); 
+    }
     const encodedResult = cipherEncode(userOffset, msgEncode);
     return encodedResult;
   },
