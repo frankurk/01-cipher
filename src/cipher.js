@@ -1,3 +1,5 @@
+if(offset == 0) throw "TypeError";
+
 const cipherEncode = function (offset, text,) {
   let result = '';
   for (let i = 0; i < text.length; i++) {
