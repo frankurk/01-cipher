@@ -30,3 +30,4 @@ Agregamos también un botón de copiar para llevar el mensaje codificado al deco
 Cambiamos de lugar los botones encode y decode para que se encuentren bajo el texto que inserta el usuario y hacer la interfaz más amigable e intuitiva.
 Agregamos cifrado y descifrado para números, añadiendolos al conjunto de cipher.js
 Modificamos el diseño en css para que todo quedara en su sitio.
+Añadimos el icono de pestaña.
