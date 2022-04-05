@@ -1,6 +1,8 @@
-if(offset == 0) throw "TypeError";
-
 const cipherEncode = function (offset, text,) {
+  try { if(text == "")
+    throw new TypeError('Empty')
+  } catch (e) { console.log(e.name) };
+
   let result = '';
   for (let i = 0; i < text.length; i++) {
     let letterPosition = text[i].charCodeAt();
