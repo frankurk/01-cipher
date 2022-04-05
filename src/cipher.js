@@ -1,4 +1,5 @@
-const cipherEncode = function (offset, text) {
+
+const cipherEncode = function (offset, text,) {
   try {
     if (text == "") throw new TypeError();
   } catch (e) {
