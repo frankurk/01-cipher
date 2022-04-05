@@ -34,7 +34,7 @@ const cipherEncode = function (offset, text,) {
 const cipher = {
   encode: function (userOffset, msgEncode) {
     try {
-      if (text == "") throw new TypeError();
+      if (msgEncode == "") throw new TypeError();
     } catch (e) {
       console.log(e.name); 
     }
