@@ -1,5 +1,6 @@
 const cipherEncode = function (offset, text,) {
-  let result = '';
+
+ let result = '';
   for (let i = 0; i < text.length; i++) {
     let letterPosition = text[i].charCodeAt();
     
@@ -30,7 +31,6 @@ const cipherEncode = function (offset, text,) {
 
   return result;
 };
-
 
 const cipher = {
   encode: function (userOffset, msgEncode) {
