@@ -3,7 +3,7 @@ const cipherEncode = function (offset, text,) {
   try {
     if (text == "") throw new TypeError();
   } catch (e) {
-    alert("Textbox is empty");
+    console.log(e.name); 
   }
   let result = "";
   for (let i = 0; i < text.length; i++) {
