@@ -1,12 +1,13 @@
-const cipherEncode = function (offset, text,) {
-  try { if(text == "")
-    throw new TypeError('Empty')
-  } catch (e) { console.log(e.name) };
-
-  let result = '';
+const cipherEncode = function (offset, text) {
+  try {
+    if (text == "") throw new TypeError();
+  } catch (e) {
+    alert("Textbox is empty");
+  }
+  let result = "";
   for (let i = 0; i < text.length; i++) {
     let letterPosition = text[i].charCodeAt();
-    
+
     if (letterPosition >= 48 && letterPosition <= 57) {
       letterPosition += offset % 10;
 
@@ -31,10 +32,8 @@ const cipherEncode = function (offset, text,) {
     result += String.fromCharCode(letterPosition);
   }
 
-
   return result;
 };
-
 
 const cipher = {
   encode: function (userOffset, msgEncode) {
