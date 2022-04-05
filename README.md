@@ -5,7 +5,8 @@ TEMA: Comunicación en contexto de conflicto militar o político.
 CLIENTE: Personas que necesitan comunicarse sin ser censuradas.
 FUENTE:Inknut Antiqua-Monofett-Jockey One
 PALETA DE COLORES: #062C30-#05595B-#E2D784-#F5F5F5
-<img SRC = "COLOR PALETTE.png">
+
+<img src = "COLOR PALETTE.png">
 
 PROTOTIPO
 <img src = "PROTOTYPE.png">
@@ -23,4 +24,9 @@ Hicimos merge con cambios de HTML, CSS Y README.
 Pedimos OH con Mauricio donde nos ayudó a conectar la info del slide para el desplazamiento del cifrado y también poder unir el cifrado con el botón.
 Logramos que el botón en cada pantalla se conecte con el cifrado encode y decode.
 Actualizamos README y mergeamos una branch con el cifrado en ambas pantallas.
-Trabajamos en agregar un fonde diferente en las pantallas de encode y decode.
+Para continuar pedimos feedback a Domi y también obtuvimos feedback de Dani y compañeras en el cierre del primer sprint.
+Logramos agregar una pantalla de landing donde se recibe al usuario y se le da una breve descripción antes de que pueda comenzar a usar el cifrador.
+Agregamos también un botón de copiar para llevar el mensaje codificado al decodificador o viceversa.
+Cambiamos de lugar los botones encode y decode para que se encuentren bajo el texto que inserta el usuario y hacer la interfaz más amigable e intuitiva.
+Agregamos cifrado y descifrado para números, añadiendolos al conjunto de cipher.js
+Modificamos el diseño en css para que todo quedara en su sitio.
