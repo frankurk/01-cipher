@@ -31,3 +31,4 @@ Cambiamos de lugar los botones encode y decode para que se encuentren bajo el te
 Agregamos cifrado y descifrado para números, añadiendolos al conjunto de cipher.js
 Modificamos el diseño en css para que todo quedara en su sitio.
 Añadimos el icono de pestaña.
+Logramos añadir un alert para avisar al usuario cuando la caja de texto está vacía y no hay nada que codificar.
