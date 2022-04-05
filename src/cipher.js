@@ -33,12 +33,12 @@ const cipherEncode = function (offset, text,) {
 
 const cipher = {
   encode: function (userOffset, msgEncode) {
+    const encodedResult = cipherEncode(userOffset, msgEncode);
     try {
       if (msgEncode == "") throw new TypeError();
     } catch (e) {
       console.log(e.name); 
     }
-    const encodedResult = cipherEncode(userOffset, msgEncode);
     return encodedResult;
   },
   decode: function (userOffset, msgEncode) {
