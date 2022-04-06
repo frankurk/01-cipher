@@ -30,7 +30,7 @@ if (encodeOption) {
 
 if (encodeButton) {
   encodeButton.addEventListener("click", function () {
-    let userOffset = window.localStorage.getItem("offset");
+    let userOffset = parseInt(window.localStorage.getItem("offset"));
     let msgEncode = document.getElementById("msgEncode").value;
     const encodeMessage = cipher.encode(userOffset, msgEncode);
     document.getElementById("output").value = encodeMessage;
@@ -47,7 +47,7 @@ if (decodeOption) {
 
 if (decodeButton) {
   decodeButton.addEventListener("click", function () {
-    let userOffset = window.localStorage.getItem("offset");
+    let userOffset = parseInt(window.localStorage.getItem("offset"));
     let msgDecode = document.getElementById("msgDecode").value;
     const decodeMessage = cipher.decode(userOffset, msgDecode);
     document.getElementById("output").value = decodeMessage;
