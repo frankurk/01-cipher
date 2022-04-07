@@ -38,8 +38,8 @@ const cipher = {
     const encodedResult = cipherEncode(userOffset, msgEncode);
     return encodedResult;
   },
-  decode: function (userOffset, msgEncode) {
-    const decodedResult = cipherEncode(-userOffset, msgEncode);
+  decode: function (userOffset, msgDecode) {
+    const decodedResult = cipherEncode(-userOffset, msgDecode);
     return decodedResult;
   },
 };
