@@ -1,4 +1,6 @@
 PROJECT CIPHER
+
+
 INTRODUCCIÓN
 
 TEMA: Comunicación en contexto de conflicto militar o político. 
@@ -10,10 +12,14 @@ PALETA DE COLORES: #062C30-#05595B-#E2D784-#F5F5F5
 
 PROTOTIPO
 
+
 <img src = "PROTOTYPE.png">
+
 https://www.figma.com/file/lXXRZrl8nPbr51YvTe2bFc/CIPHER?node-id=0%3A1
 
 DESCRIPCIÓN
+
+
 Comenzamos con crear el prototipo después de asignar contexto.
 Editamos readme con prototipo e introducción en una rama nueva.
 Creamos branch para CSS y HTML.
