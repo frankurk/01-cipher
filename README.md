@@ -9,6 +9,7 @@ PALETA DE COLORES: #062C30-#05595B-#E2D784-#F5F5F5
 <img src = "COLOR PALETTE.png">
 
 PROTOTIPO
+
 <img src = "PROTOTYPE.png">
 https://www.figma.com/file/lXXRZrl8nPbr51YvTe2bFc/CIPHER?node-id=0%3A1
 
