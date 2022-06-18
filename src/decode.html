@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Caesar Cipher</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Jockey+One&family=Monofett&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Jockey+One&family=Monofett&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon"  type="image/png" href="LOGO.png">
+    <link rel="icon" type="image/png" href="LOGO.png" />
   </head>
-  <h1>CODEME</h1>
   <body>
-    <div id="root"><br><br>
-        <label class= "subt" for="mensaje">ENCODED MESSAGE:</label><br><br>
-        <input class="inputBox" type="text" placeholder="Ingresa el mensaje" id="msgDecode" name="mensaje"><br><br>
-        <button class="button" id="decodeButton">DECODE</button><br><br>
-        <label class= "subt" for="output" >TRANSLATION:</label><br><br>
-        <input class="inputBox" type="textbox" id= "output" name="output">
-        <button class="copy" id="copyButton">Copy</button><br><br>
-      <button class="gobackbutton" id="goback">GO BACK</button><br><br>
+    <div class="main-page">
+      <h1>CODEME</h1>
+      <div class="box">
+        <label class="subt" for="mensaje">ENCODED MESSAGE:</label>
+        <input
+          class="inputBox"
+          type="text"
+          placeholder="Ingresa el mensaje"
+          id="msgDecode"
+          name="mensaje"
+        />
+        <button class="button" id="decodeButton">DECODE</button>
+        <label class="subt" for="output">TRANSLATION:</label>
+        <input class="inputBox" type="textbox" id="output" name="output" />
+        <button class="copy" id="copyButton">Copy</button>
+      </div>
+      <button class="gobackbutton" id="goback">GO BACK</button>
     </div>
     <script src="index.js" type="module"></script>
   </body>
