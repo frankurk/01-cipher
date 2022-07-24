@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { FaCopy } from 'react-icons/fa';
-import cipher from '../Cipher';
+import cipher from '../cipher';
 
 function Encode() {
   const [message, setMessage] = useState('');
