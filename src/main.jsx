@@ -5,18 +5,21 @@ import Decode from './views/Decode';
 import Home from './views/Home';
 import Encode from './views/Encode';
 import Landing from './views/Landing';
+import { OffsetProvider } from './context/Context';
 import './index.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/decode" element={<Decode />} />
-        <Route path="/encode" element={<Encode />} />
-      </Routes>
-    </Router>
+    <OffsetProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/decode" element={<Decode />} />
+          <Route path="/encode" element={<Encode />} />
+        </Routes>
+      </Router>
+    </OffsetProvider>
   );
 }
 

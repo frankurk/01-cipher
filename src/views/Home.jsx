@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import OffsetContext from '../context/Context';
 import '../index.css';
 
 function Home() {
-  const [offset, setOffset] = useState(5);
-
-  function handleChange(e) {
-    setOffset(parseInt(e.target.value, 10));
-  }
+  const { offset, handleChange } = useContext(OffsetContext);
 
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden items-center justify-center bg-stone-800">
       <div className="flex items-center justify-center flex-col bg-teal-900 lg:w-7/12 rounded-2xl shadow-xl lg:p-8 p-3">
-        <h1 className="font-monofett lg:text-9xl text-8xl text-[#e2d784] pointer-events-none">CODEME</h1>
+        <h1 className="font-monofett lg:text-9xl text-8xl text-[#e2d784] pointer-events-none">
+          CODEME
+        </h1>
         <label className="font-jockey text-4xl text-stone-50 text-center">
           LEVEL
           <input
@@ -25,13 +24,19 @@ function Home() {
           />
         </label>
         <output className="font-jockey text-4xl text-stone-50">{offset}</output>
-        <Link to="/encode" state={offset}>
-          <button type="button" className="bg-[#e2d784] text-stone-800 font-monofett text-3xl rounded-2xl p-3 shadow-xl m-3">
+        <Link to="/encode">
+          <button
+            type="button"
+            className="bg-[#e2d784] text-stone-800 font-monofett text-3xl rounded-2xl p-3 shadow-xl m-3"
+          >
             ENCODE
           </button>
         </Link>
-        <Link to="/decode" state={offset}>
-          <button type="button" className="bg-[#e2d784] text-stone-800 font-monofett text-3xl rounded-2xl p-3 shadow-xl m-3">
+        <Link to="/decode">
+          <button
+            type="button"
+            className="bg-[#e2d784] text-stone-800 font-monofett text-3xl rounded-2xl p-3 shadow-xl m-3"
+          >
             DECODE
           </button>
         </Link>

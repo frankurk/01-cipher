@@ -1,25 +1,19 @@
-import React, { useState, useRef } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import React, { useState, useRef, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { FaCopy } from 'react-icons/fa';
 import cipher from '../cipher';
+import OffsetContext from '../context/Context';
 
 function Decode() {
   const [message, setMessage] = useState('');
-  const location = useLocation();
   const inputRef = useRef(null);
+  const { offset } = useContext(OffsetContext);
 
   const handleChange = (e) => {
     setMessage(e.target.value);
   };
 
-  const { state } = location;
-
-  const user = {
-    offset: state,
-    msg: message,
-  };
-
-  const decodeMessage = cipher.decode(user.offset, user.msg);
+  const decodeMessage = cipher.decode(offset, message);
 
   const selectAllText = () => {
     inputRef.current.select();
