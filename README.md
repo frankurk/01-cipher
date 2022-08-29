@@ -1,15 +1,17 @@
 # PROJECT CIPHER
 
-## DESCRIPTION
+## Description
 
-SUBJECT: Communication in the context of military or political conflict.
+“Cipher” is a web application that allows the user to encrypt and decrypt a text message by indicating a specific character offset. 
 
-CLIENT: People who need to communicate without being censored.
+**Subject**: Communication in the context of military or political conflict.
 
-FONT: Inknut Antiqua - Monofett - Jockey One
+**Client**: People who need to communicate without being censored.
 
-COLOR PALETTE: #062C30-#05595B-#E2D784-#F5F5F5F5
+**Font**: Inknut Antiqua - Monofett - Jockey One
 
-## USAGE
+**Color Palette**: #062C30-#05595B-#E2D784-#F5F5F5F5
+
+## Usage
 
 <img src="cipher-usage.gif">
