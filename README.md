@@ -12,6 +12,6 @@
 
 **Color Palette**: #062C30-#05595B-#E2D784-#F5F5F5F5
 
-## Usage
+## Demo
 
 <img src="cipher-usage.gif">
