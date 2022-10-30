@@ -2,9 +2,9 @@ import React, { useState, useRef, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCopy } from 'react-icons/fa';
 import cipher from '../cipher';
-import OffsetContext from '../context/Context';
+import OffsetContext from '../context/OffsetContext';
 
-function Encode() {
+const Encode = () => {
   const [message, setMessage] = useState('');
   const inputRef = useRef(null);
 
@@ -16,7 +16,7 @@ function Encode() {
 
   const encodeMessage = cipher.encode(offset, message);
 
-  const selectAllText = () => {
+  const selectInputText = () => {
     inputRef.current.select();
   };
 
@@ -39,7 +39,7 @@ function Encode() {
             className="lg:w-[50px] w-[50px] h-10 px-4 rounded-r-lg bg-[#e2d784] text-gray-800 font-bold border-[#e2d784]"
             type="button"
             onClick={() => {
-              selectAllText();
+              selectInputText();
               navigator.clipboard.writeText(encodeMessage);
             }}
           >

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Landing() {
+const Landing = () => {
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden items-center justify-center bg-stone-800">
       <h1 className="font-monofett lg:text-9xl text-7xl text-[#e2d784] pointer-events-none">

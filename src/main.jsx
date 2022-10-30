@@ -5,7 +5,7 @@ import Decode from './views/Decode';
 import Home from './views/Home';
 import Encode from './views/Encode';
 import Landing from './views/Landing';
-import { OffsetProvider } from './context/Context';
+import { OffsetProvider } from './context/OffsetContext';
 import './index.css';
 
 function App() {

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import OffsetContext from '../context/Context';
+import OffsetContext from '../context/OffsetContext';
 import '../index.css';
 
-function Home() {
+const Home = () => {
   const { offset, handleChange } = useContext(OffsetContext);
 
   return (

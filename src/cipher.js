@@ -1,4 +1,4 @@
-const cipherFunction = (offset, text) => {
+const cipherFormula = (offset, text) => {
   if (typeof offset !== 'number') throw new TypeError();
   if (typeof text !== 'string') throw new TypeError();
 
@@ -34,13 +34,13 @@ const cipherFunction = (offset, text) => {
 };
 
 const cipher = {
-  encode(userOffset, msgEncode) {
-    const encodedResult = cipherFunction(userOffset, msgEncode);
-    return encodedResult;
+  encode(userOffset, messageToEncode) {
+    const encodedMessage = cipherFormula(userOffset, messageToEncode);
+    return encodedMessage;
   },
-  decode(userOffset, msgDecode) {
-    const decodedResult = cipherFunction(-userOffset, msgDecode);
-    return decodedResult;
+  decode(userOffset, messageToDecode) {
+    const decodedMessage = cipherFormula(-userOffset, messageToDecode);
+    return decodedMessage;
   },
 };
 
